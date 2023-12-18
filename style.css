@@ -1,0 +1,29 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    /* The image used */
+    background-image: url('https://raw.githubusercontent.com/rule66/-mcc/main/background.png');
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Add some styling to your email link */
+.email-link {
+    display: inline-block;
+    background: #ffffffaa; /* semi-transparent white */
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin-top: 20px;
+}
