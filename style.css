@@ -1,11 +1,6 @@
-body, html {
-    height: 100%;
-    margin: 0;
-}
-
 .bg {
     /* The image used */
-    background-image: url('https://raw.githubusercontent.com/rule66/mcc/main/wdbg.png%400.5x.png');
+    background-image: url('https://raw.githubusercontent.com/rule66/mcc/main/wdbg.png%400.5x.png'); /* Replace with the path to your image file */
 
     /* Full height */
     height: 100%; 
@@ -14,16 +9,35 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    /* Use flexbox to center the content vertically and horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Ensures the text within the content is centered */
+}
+
+.content {
+    max-width: 600px; /* Set a max-width for the content and center it */
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border-radius: 10px;
 }
 
 /* Add some styling to your email link */
 .email-link {
     display: inline-block;
-    background: #ffffffaa; /* semi-transparent white */
-    padding: 10px;
+    background: #333; /* Dark background for the button */
+    color: #fff; /* White text color */
+    padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
-    color: #333;
     font-weight: bold;
     margin-top: 20px;
+    transition: background-color 0.3s ease; /* Transition effect for hover state */
+}
+
+.email-link:hover {
+    background-color: #555; /* Darken the button a bit when hovered */
 }
